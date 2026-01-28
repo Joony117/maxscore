@@ -59,11 +59,11 @@ Chatgpt, prompts used:
 
 how come some ifs use [[]] and some (())
 
-read -rp "Enter the year of the car: " YEAR read -rp "Enter the Make of the car: " MAKE read -rp "Enter the Model of the car: " MODEL CAR="$YEAR:$MAKE:$MODEL" will this work as expected with the ':' character ?
+what does this mean : In maxscore.sh line 8: read -rp "Enter 5 scores: " SCORE[0] ^------^ SC2313 (warning): Quote array indices to avoid them expanding as globs.
 
-lets say we want to append the string car to another file named my_old_cars, do i just do $CAR >> my_old_cars ?
+Is "read -rp "Enter 5 scores: " "SCORE[0]"" correct syntax? \
 
-can we use cat to print out a sorted output?
+
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
