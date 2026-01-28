@@ -1,13 +1,13 @@
 # README for Maxscore Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** [Junho Yi]
+- **Course:** [CPSC298 - Intro to Unix]
 - **Assignment:** Maxscore Assignment
-- **Date:** [Date of Completion]
+- **Date:** [27 jan]
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+[This script reads 5 integer scores from standard input, stores them in an array, and finds the highest score. After finding the maximum score, it prints the maximum and shows how far each score is from the maximum value.]
 
 ## Usage
 To run the script interactively:
@@ -26,16 +26,36 @@ To test with the provided input file:
 - How you loop through the array to find the maximum value
 - How you calculate and display the difference between each score and the highest
 
+The script declares an array SCORE and reads the first score into SCORE[0].
+It sets MAX equal to SCORE[0], then reads the remaining 4 scores into SCORE[1] through SCORE[4].
+Each time it reads a score, it compares it to MAX and updates MAX if the new score is larger.
+Finally, it prints the highest score and loops through all 5 scores to print the difference MAX - SCORE[i] for each one.
+
 ## Testing Results
 [Describe your testing process and results. Include:]
 - Example successful inputs and results
-- How you used the maxscore-input file to test
+input
+10
+7
+25
+25
+3
 
+output
+The highest score is 25
+The scores are:
+10 differs from max by 15
+7 differs from max by 18
+25 differs from max by 0
+25 differs from max by 0
+3 differs from max by 22
+- How you used the maxscore-input file to test
+used ./maxscore.sh < maxscore-input to test, worked as intended
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, arrays, or Git workflow problems.]
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+[Chatgpt for syntax checking]
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
