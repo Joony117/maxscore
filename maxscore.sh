@@ -5,13 +5,13 @@
 
 SCORE=()
 
-read -rp "Enter 5 scores: " SCORE[0]
+read -rp "Enter 5 scores: " 'SCORE[0]'
 MAX=${SCORE[0]}
 
 for (( i=1; i < 5; i++))
 do
-    read -r SCORE[i]
-        if [[ $SCORE[i] -gt $MAX]]; then
+    read -r 'SCORE[i]'
+        if [[ ${SCORE[i]} -gt $MAX ]]; then
             MAX=${SCORE[i]}
         fi
 done
